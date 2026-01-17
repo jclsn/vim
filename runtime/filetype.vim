@@ -273,6 +273,9 @@ au BufNewFile,BufRead *.cpy
 	\   setf cobol |
 	\ endif
 
+" Dockercompose; Uses the same syntax as YAML
+au BufNewFile,BufRead docker-compose.yaml,docker-compose.yml setf dockercompose.yaml
+
 " Dockerfile; Podman uses the same syntax with name Containerfile
 " Also see Dockerfile.* below.
 au BufNewFile,BufRead Containerfile,Dockerfile,dockerfile,*.[dD]ockerfile	setf dockerfile
