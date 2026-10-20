@@ -12,5 +12,8 @@ let b:did_ftplugin = 1
 setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,:///,://
 setlocal commentstring=//\ %s
 setlocal foldmethod=syntax
+setlocal formatoptions+=croql
+setlocal expandtab shiftwidth=2 softtabstop=2
+setlocal suffixesadd=.pkl
 
 let b:undo_ftplugin = 'setl com< cms< fdm<'
